@@ -10,7 +10,9 @@
   "classLoaderModelLoaderDescriptor": {
     "id": "mule",
     "attributes": {
-      "exportedResources": []
+      "exportedResources": [
+                "/mule/app/demo-testing-api.xml"
+            ]
     }
   },
   "bundleDescriptorLoader": {
