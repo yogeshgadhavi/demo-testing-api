@@ -9,6 +9,6 @@ pipeline {
         bat 'mvn deploy -P arm -Danypoint.target.type=server -Darm.target.name=apprhel74mupoc08-mule4 -Danypoint.environment=Sandbox -Danypoint.username=bimehta -Danypoint.password=Mel2018a'
       }
     }
-    }
+  
   }
 }
