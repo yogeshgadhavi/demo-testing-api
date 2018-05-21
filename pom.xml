@@ -53,7 +53,28 @@
 		
 		
 		<plugins>
-			
+			<plugin>
+                <groupId>org.mule.tools</groupId>
+                <artifactId>maven-mule-plugin</artifactId>
+                <version>1.6</version>
+                <extensions>true</extensions>
+                <configuration>
+                    <copyToAppsDirectory>false</copyToAppsDirectory>
+                    <excludeMuleDependencies>true</excludeMuleDependencies>
+                    <inclusions>
+                        <inclusion>
+                            <groupId>com.mulesoft.muleesb.transports</groupId>
+                            <artifactId>mule-transport-sap</artifactId>
+                        </inclusion>
+                    </inclusions>  
+                    <exclusions>
+                        <exclusion>
+                            <groupId>org.mule.transports</groupId>
+                            <artifactId>mule-transport-vm</artifactId>
+                        </exclusion>
+                    </exclusions>                                    
+                </configuration>
+            </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
@@ -65,14 +86,7 @@
                 </configuration>
             </plugin>
 		
-			<plugin>
-				<groupId>org.mule.tools.maven</groupId>
-				<artifactId>mule-maven-plugin</artifactId>
-				<version>${mule.maven.plugin.version}</version>
-				<extensions>true</extensions>
-				<configuration>
-				</configuration>
-			</plugin>
+			
 		</plugins>
 	</build>
 
@@ -111,7 +125,17 @@
             <layout>default</layout>
         </repository>
     </repositories>
-  
+  <pluginRepositories>
+        <pluginRepository>
+            <id>mulesoft-release</id>
+            <name>mulesoft release repository</name>
+            <layout>default</layout>
+            <url>http://repository.mulesoft.org/releases/</url>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </pluginRepository>
+    </pluginRepositories>
     
     
      <profiles>
