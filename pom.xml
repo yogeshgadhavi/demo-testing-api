@@ -6,7 +6,7 @@
 	<groupId>com.mycompany</groupId>
 	<artifactId>demo-testing-api</artifactId>
     <version>1.0.0</version>
-    <packaging>mule-application</packaging>
+    <packaging>mule</packaging>
 
 	<name>demo-testing-api</name>
 
