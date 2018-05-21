@@ -118,20 +118,19 @@
          <url>file:///C:/ANZ/Repositories/</url>
        </repository>
    </distributionManagement>
-	<repositories>
+<repositories>
           <repository>
-            <id>Central</id>
-            <name>Central</name>
-            <url>http://repo1.maven.org/maven2/</url>
+            <id>anypoint-exchange</id>
+            <name>Anypoint Exchange</name>
+            <url>https://maven.anypoint.mulesoft.com/api/v1/maven</url>
             <layout>default</layout>
         </repository>
         <repository>
             <id>mulesoft-releases</id>
             <name>MuleSoft Releases Repository</name>
-            <url>http://repository.mulesoft.org/releases/</url>
+            <url>https://repository.mulesoft.org/releases/</url>
             <layout>default</layout>
         </repository>
-
     </repositories>
     <pluginRepositories>
         <pluginRepository>
