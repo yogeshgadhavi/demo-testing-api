@@ -53,28 +53,7 @@
 		
 		
 		<plugins>
-			<plugin>
-                <groupId>org.mule.tools</groupId>
-                <artifactId>maven-mule-plugin</artifactId>
-                <version>1.6</version>
-                <extensions>true</extensions>
-                <configuration>
-                    <copyToAppsDirectory>false</copyToAppsDirectory>
-                    <excludeMuleDependencies>true</excludeMuleDependencies>
-                    <inclusions>
-                        <inclusion>
-                            <groupId>com.mulesoft.muleesb.transports</groupId>
-                            <artifactId>mule-transport-sap</artifactId>
-                        </inclusion>
-                    </inclusions>  
-                    <exclusions>
-                        <exclusion>
-                            <groupId>org.mule.transports</groupId>
-                            <artifactId>mule-transport-vm</artifactId>
-                        </exclusion>
-                    </exclusions>                                    
-                </configuration>
-            </plugin>
+			
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
